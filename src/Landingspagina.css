@@ -1,0 +1,234 @@
+@media screen and (min-width: 320px) {
+  .landingspagina .logo {
+    width: 100vw;
+  }
+  .landingspagina .logo img {
+    width: 75px;
+    margin: auto;
+    display: block;
+    padding-top: 20px;
+  }
+  .aanmeldingsformulier {
+    background-color: white;
+    filter: drop-shadow(-10px 0px 10px rgba(0, 0, 0, 0.06));
+    width: 80vw;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding-bottom: 30px;
+  }
+  .aanmeldingsformulier h1 {
+    font-family: "Sprat";
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: #4a4a4a;
+  }
+  .inputTitle {
+    font-weight: 700;
+    color: #4a4a4a;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  input[type="text"] {
+    margin-left: 20px;
+    width: 70%;
+    border: none;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.12));
+    height: 35px;
+    border-radius: 50px;
+    padding-left: 20px;
+    font-weight: 700;
+    color: #4a4a4a;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  input[type="text"]::placeholder {
+    font-weight: 600;
+    font-size: 11px;
+    color: #c7c7c7;
+  }
+  input[type="text"]:focus {
+    outline: none;
+  }
+  .radio input[type="radio"] {
+    display: none;
+    /*removes original button*/
+  }
+
+  .radio {
+    margin-bottom: 10px;
+  }
+
+  .radio label:before {
+    -webkit-appearance: inherit;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16);
+    /*styles outer circle*/
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin: 0 5px 0 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 11px;
+    background-color: white;
+  }
+
+  .radio label {
+    position: relative;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 11px;
+    color: #4a4a4a;
+    margin-left: 20px;
+  }
+
+  .radio label input[type="radio"]:checked + span {
+    /*styles inside circle*/
+    border-radius: 11px;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    display: block;
+    background-color: #434352;
+    transition-duration: 0.3s;
+  }
+  select {
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23434352' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: none;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 3px;
+    background-color: white;
+    width: 90px;
+    padding-left: 30px;
+    height: 30px;
+    border: none;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.12));
+    border-radius: 30px;
+    font-weight: 700;
+    font-family: "Montserrat";
+    font-size: 12px;
+    color: #4a4a4a;
+    margin-left: 20px;
+  }
+  select:focus {
+    outline: none;
+  }
+  button {
+    background: linear-gradient(45deg, #a9d98b, #cdeaba);
+    font-weight: 900;
+    font-size: 12px;
+    padding: 12px 50px;
+    margin-left: 5vw;
+    border-radius: 30px;
+    color: White;
+    border: none;
+    text-transform: uppercase;
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  h1 {
+    width: 350px;
+    display: block;
+    margin: auto;
+  }
+  .center {
+    display: block;
+    margin: auto;
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .aanmeldingsformulier h1 {
+    width: unset;
+    margin: 0;
+    padding-top: 50px;
+  }
+  .inputTitle {
+    margin-left: 0px;
+  }
+  input[type="text"] {
+    margin-left: 0px;
+  }
+  .radio label {
+    margin-left: 0px;
+  }
+  select {
+    margin-left: 0px;
+  }
+  input[type="text"].nameField {
+    width: 300px;
+  }
+  input[type="text"].emailField {
+    width: 400px;
+  }
+  .center {
+    display: block;
+    margin: auto;
+    width: fit-content;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 900px) {
+}
+
+@media screen and (min-width: 1024px) {
+  .aanmeldingsformulier {
+    width: 70%;
+  }
+  h1 {
+    margin-bottom: 40px;
+  }
+  .flex {
+    display: flex;
+  }
+  .radio {
+    margin-right: 20px;
+  }
+  .inputTitle {
+    margin-top: 40px;
+  }
+  input[type="text"].nameField {
+    width: 250px;
+    padding-left: 30px;
+  }
+  input[type="text"].emailField {
+    width: 200px;
+    padding-left: 30px;
+  }
+  .vl {
+    width: 2px;
+    height: 100px;
+    background-color: #4a4a4a;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 80px;
+  }
+  button {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}
