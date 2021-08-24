@@ -1,4 +1,12 @@
 @media screen and (min-width: 320px) {
+  .hidden {
+    display: none;
+  }
+
+  .landingspagina {
+    padding-bottom: 50px;
+  }
+
   .landingspagina .logo {
     width: 100vw;
   }
@@ -8,14 +16,42 @@
     display: block;
     padding-top: 20px;
   }
+
+  .verwachtingen {
+    width: 80vw;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.12));
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    padding-bottom: 30px;
+  }
+
+  .verwachtingen h2 {
+    color: #4a4a4a;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .verwachtingen p {
+    font-size: 12px;
+    text-align: center;
+    line-height: 19px;
+    font-weight: 500;
+    width: 80%;
+    margin: auto;
+  }
+
   .aanmeldingsformulier {
     background-color: white;
     filter: drop-shadow(-10px 0px 10px rgba(0, 0, 0, 0.06));
     width: 80vw;
     margin: auto;
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 30px;
     padding-bottom: 30px;
+    margin-bottom: 30px;
   }
   .aanmeldingsformulier h1 {
     font-family: "Sprat";
@@ -24,6 +60,8 @@
     padding-top: 30px;
     padding-bottom: 20px;
     color: #4a4a4a;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .inputTitle {
     font-weight: 700;
@@ -122,12 +160,17 @@
     color: #4a4a4a;
     margin-left: 20px;
   }
+
+  #hour {
+    width: 130px;
+  }
   select:focus {
     outline: none;
   }
-  button {
+  input[type="submit"] {
     background: linear-gradient(45deg, #a9d98b, #cdeaba);
-    font-weight: 900;
+    font-family: "Montserrat";
+    font-weight: 700;
     font-size: 12px;
     padding: 12px 50px;
     margin-left: 5vw;
@@ -138,6 +181,7 @@
     margin: auto;
     display: block;
     margin-top: 40px;
+    text-decoration: none;
   }
 }
 
@@ -182,7 +226,6 @@
     display: block;
     margin: auto;
     width: fit-content;
-    margin-top: 50px;
   }
 }
 
@@ -193,11 +236,32 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .aanmeldingsformulier {
-    width: 70%;
+  .verwachtingen {
+    width: 150px;
+    margin-left: 50px;
+    margin-right: 30px;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.12));
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
   }
-  h1 {
-    margin-bottom: 40px;
+
+  .verwachtingen h2 {
+    text-align: left;
+    padding-top: 0px;
+  }
+  .verwachtingen p {
+    text-align: left;
+    width: unset;
+  }
+
+  .aanmeldingsformulier {
+    width: 750px;
+    margin-right: 0px;
   }
   .flex {
     display: flex;
@@ -216,6 +280,9 @@
     width: 200px;
     padding-left: 30px;
   }
+  .leftSide {
+    margin-top: 30px;
+  }
   .vl {
     width: 2px;
     height: 100px;
@@ -223,12 +290,15 @@
     border-radius: 5px;
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: 80px;
+    margin-top: 120px;
   }
-  button {
-    margin-top: 100px;
+  input[type="submit"] {
+    margin-top: 50px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .aanmeldingsformulier {
+    width: 850px;
+  }
 }
